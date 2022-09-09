@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexander Hellsten">
+    <meta name="description" content="Web developer tool">
+    <meta name="keywords" content="Web developing, Web dev">
+    <title>Web developing tool</title>
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/hierarchy.js"></script>
+    <script type="text/javascript" src="/js/log.js"></script>
+</head>
+<body onload="liveBody()" id="body">
+    <div class="leftSideBar">
+        <p class="label">Text:</p>
+        <button type="button" href="#" onclick="createP();">p-field</button> 
+        <button type="button" href="#" onclick="createBr();">br-field</button>
+        <div style="height: 20px;"></div>
+        <p class="label">Img:</p>
+        <button type="button" href="#" onclick="createImg();">img-field</button>
+        <div style="height: 20px;"></div>
+        <p class="label">Div:</p>
+        <button type="button" href="#" onclick="createDiv();">div-field</button> 
+        <div style="height: 20px;"></div>
+        <p class="label">Tables:</p>
+        <button type="button" href="#" onclick="createTable();">table-field</button>
+        <button type="button" href="#" onclick="createTr();">tr-field</button> 
+        <button type="button" href="#" onclick="createTh();">th-field</button> 
+        <p class="label">Link:</p>
+        <button type="button" href="#" onclick="createLink();">a-field</button>
+    </div>
+
+    <div class="rightSideBar">
+        <div class="hierarchy" id="hierarchy">
+        </div>
+        <br>
+        <div class="hierarchyinfo" id="targetInfo">
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,196 @@
+
+/* How the live body originally looks */
+.liveUpdate {
+    background-color: white;
+    margin: 30px;
+    width: 50%;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+/* Standard stuff */
+html {
+    --scrollbarBG: #353535;
+    --thumbBG: #464646;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+/* Used in for the side bars */
+.rightSideBar {
+    background-color: rgba(53, 53, 53, .9);
+    padding: 20px;
+    padding-top: 15px;
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+    bottom: -35px;
+    right: 0px;
+}
+.leftSideBar {
+    background-color: rgba(53, 53, 53, .9);
+    padding: 20px;
+    padding-top: 15px;
+    height: 100vh;
+    width: 10%;
+    bottom: -35px;
+    left: 0px;
+    position: fixed;
+}
+
+
+/* Used in hierarchy */
+.hierarchy {
+    background-color: rgba(0, 0, 0, 0.103);
+    padding: 20px;
+    overflow: auto;
+    border-radius: 10px;
+    padding-top: 15px;
+    height: 50%;
+    width: auto;
+}
+.hierarchyParent {
+    background-color: rgba(0, 0, 0, 0.103);
+    padding: 5px;
+    border-radius: 10px;
+    overflow: auto;
+    width: auto;
+    height: auto;
+}
+._hierarchyText {
+    padding: 2px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, .8);
+}
+.hierarchyinfo {
+    background-color: rgba(0, 0, 0, 0.103);
+    padding: 20px;
+    overflow: auto;
+    border-radius: 10px;
+    padding-top: 15px;
+    height: 30%;
+    width: auto;
+}
+.hierarchytext {
+    margin: 10px;
+    color: white;
+}
+label {
+    display: inline-block;
+    text-align: left;
+    color: rgba(255, 255, 255, .8)
+}
+.hieTitle {
+    font-size: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, .8)
+}
+.hieTxt {
+    color: rgba(255, 255, 255, .8);
+}
+
+/* Used for diffrent input types and their styles */
+input[type=text] {
+    padding: 0px;
+    border: 0px solid #aaa;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+}
+.inputSmall {
+    width: 20%;
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(53, 53, 53, 1);
+}
+.inputSmall:hover {
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+.inputMedium {
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    float: right;
+    border-radius: 10px;
+    padding: 2px;
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(53, 53, 53, 1);
+}
+.inputMedium:hover {
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+.inputLarge {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2px;
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(53, 53, 53, 1);
+}
+.inputLarge:hover {
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+button[type=button] {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(53, 53, 53, 1);
+    margin-top: 10px;
+    border: 2px solid;
+    border-color: rgb(41, 41, 41);
+    color: rgba(255, 255, 255, .3);
+    transition: 0.3s;
+}
+button[type=button]:hover {
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+/* Standard p */
+p {
+    margin:0px;
+    padding: 0px;
+}
+
+/* Used on the left side bar as the labels */
+.label {
+    text-align: center;
+    color: rgba(255, 255, 255, .8)
+}
+
+/* Makes so the image cannot exceed the live body size */
+img {
+    max-width: 100%;
+}
+
+/* For the scrollbar */
+::-webkit-scrollbar {
+    width: 11px;    
+}
+::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+    border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(77, 77, 77); 
+}
